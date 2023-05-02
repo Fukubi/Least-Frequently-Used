@@ -48,6 +48,8 @@ module tb_lfu;
 		{b1, b2, b3, b4, b5} = 5'b0_0_0_1_0; @(negedge clk) xpect(1'b1, 1'b1, 1'b1, 1'b1, 1'b0);
 		
 		{b1, b2, b3, b4, b5} = 5'b0_0_0_0_1; @(negedge clk) xpect(1'b1, 1'b1, 1'b1, 1'b0, 1'b1);
-		
+
+		$display("MRU TEST PASSED");
+		$finish;
 	end
 endmodule
