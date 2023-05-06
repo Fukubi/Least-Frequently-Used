@@ -1,0 +1,22 @@
+/home/noname/Documentos/lfu/lfu.sv {1 {vlog -work work -sv /home/noname/Documentos/lfu/lfu.sv
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module lfu
+
+Top level modules:
+	lfu
+
+} {} {}} /home/noname/Documentos/lfu/tb_lfu.sv {1 {vlog -work work -sv /home/noname/Documentos/lfu/tb_lfu.sv
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module tb_lfu
+
+Top level modules:
+	tb_lfu
+
+} {} {}} /home/noname/Documentos/lfu/timer.sv {1 {vlog -work work -sv /home/noname/Documentos/lfu/timer.sv
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module timer
+
+Top level modules:
+	timer
+
+} {} {}}
