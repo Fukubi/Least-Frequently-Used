@@ -2,6 +2,18 @@
 
 A SystemVerilog description on a LFU
 
+## States
+
+```mermaid
+stateDiagram-v2
+	q0 : Initial State
+	q1 : Add 1 to counter
+
+	[*] --> q0
+	q0 --> q1 : input
+	q1 --> q0 : counter_updated
+```
+
 ## How a LFU works
 
 It counts the times a input was used and then, after a limit, when a new input is pressed it erases (in the case of this description, it becomes 0) the least used and put the new one in it.
