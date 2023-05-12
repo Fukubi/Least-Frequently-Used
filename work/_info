@@ -27,13 +27,13 @@ Z14 !s107 /home/noname/Documentos/lfu/button_led.sv|
 !s101 -O0
 vlfu
 R1
-Z15 !s100 f7len6CA@5h6AZRiQeJOb3
-Z16 I`XU`YJghNzWV3BS293b^V1
-Z17 VKS:G=L;>>CLOIMg1W]alk2
+Z15 !s100 m`OQ3eQKCQZka0EI8ACZ<2
+Z16 In5H5W7Ao6ZITS0;AAblmJ1
+Z17 VQJFa?zIJc=^NOhO9zUNd82
 Z18 !s105 lfu_sv_unit
 S1
 R6
-Z19 w1683392490
+Z19 w1683856632
 Z20 8/home/noname/Documentos/lfu/lfu.sv
 Z21 F/home/noname/Documentos/lfu/lfu.sv
 L0 1
@@ -42,52 +42,52 @@ r1
 31
 Z22 !s90 -reportprogress|300|-work|work|-sv|/home/noname/Documentos/lfu/lfu.sv|
 R12
-Z23 !s108 1683392558.267280
+Z23 !s108 1683856686.500534
 Z24 !s107 /home/noname/Documentos/lfu/lfu.sv|
 !i10b 1
 !s85 0
 !s101 -O0
 vtb_lfu
 R1
-Z25 !s100 =E=]OLhMJahmGNKXl;>CG0
-Z26 I9k612W6UgfIILnZBMkjJ81
-Z27 V=^Qf<8TzV[d4:EJAClcNG2
-Z28 !s105 tb_lfu_sv_unit
+Z25 IhzQ5A7S9@M<Li^R7J4GU92
+Z26 V=^Qf<8TzV[d4:EJAClcNG2
+Z27 !s105 tb_lfu_sv_unit
 S1
 R6
-Z29 w1683392233
-Z30 8/home/noname/Documentos/lfu/tb_lfu.sv
-Z31 F/home/noname/Documentos/lfu/tb_lfu.sv
+Z28 w1683856683
+Z29 8/home/noname/Documentos/lfu/tb_lfu.sv
+Z30 F/home/noname/Documentos/lfu/tb_lfu.sv
 L0 1
 R10
 r1
 31
-Z32 !s90 -reportprogress|300|-work|work|-sv|/home/noname/Documentos/lfu/tb_lfu.sv|
+Z31 !s90 -reportprogress|300|-work|work|-sv|/home/noname/Documentos/lfu/tb_lfu.sv|
 R12
 !i10b 1
+Z32 !s100 4DSE_f44Fh>6bbiBCiFdE3
 !s85 0
-Z33 !s108 1683392558.283782
+Z33 !s108 1683856686.529172
 Z34 !s107 /home/noname/Documentos/lfu/tb_lfu.sv|
 !s101 -O0
 vtimer
 R1
 !i10b 1
-!s100 CQR36U@SWo6NJ@^TegzbM1
-IJQ@^A[S`M>b:5c`LOzRfn0
-Z35 V9ciF5l<=ZPc[3`mH5U2EC3
-Z36 !s105 timer_sv_unit
+Z35 !s100 DOKRmT9njFd>B>>HOHPI<3
+Z36 I_QOfWfL>Q2o:`4gDO;4TM0
+Z37 V9ciF5l<=ZPc[3`mH5U2EC3
+Z38 !s105 timer_sv_unit
 S1
 R6
-w1683392556
-Z37 8/home/noname/Documentos/lfu/timer.sv
-Z38 F/home/noname/Documentos/lfu/timer.sv
+Z39 w1683856325
+Z40 8/home/noname/Documentos/lfu/timer.sv
+Z41 F/home/noname/Documentos/lfu/timer.sv
 L0 4
 R10
 r1
 !s85 0
 31
-!s108 1683392558.300698
+!s108 1683856686.546656
 !s107 /home/noname/Documentos/lfu/timer.sv|
-Z39 !s90 -reportprogress|300|-work|work|-sv|/home/noname/Documentos/lfu/timer.sv|
+Z42 !s90 -reportprogress|300|-work|work|-sv|/home/noname/Documentos/lfu/timer.sv|
 !s101 -O0
 R12

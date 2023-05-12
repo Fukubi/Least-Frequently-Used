@@ -1,5 +1,5 @@
 Fitter report for lfu
-Sat May  6 14:03:26 2023
+Sun May  7 21:04:14 2023
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -62,7 +62,7 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Fitter Summary                                                                       ;
 +------------------------------------+-------------------------------------------------+
-; Fitter Status                      ; Successful - Sat May  6 14:03:26 2023           ;
+; Fitter Status                      ; Successful - Sun May  7 21:04:14 2023           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; lfu                                             ;
 ; Top-level Entity Name              ; lfu                                             ;
@@ -90,6 +90,7 @@ applicable agreement for further details.
 ; Minimum Core Junction Temperature                                          ; 0                              ;                                ;
 ; Maximum Core Junction Temperature                                          ; 85                             ;                                ;
 ; Fit Attempts to Skip                                                       ; 0                              ; 0.0                            ;
+; Device I/O Standard                                                        ; 3.3-V LVTTL                    ;                                ;
 ; Use smart compilation                                                      ; Off                            ; Off                            ;
 ; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                             ; On                             ;
 ; Enable compact report table                                                ; Off                            ; Off                            ;
@@ -207,7 +208,7 @@ The pin-out file can be found in /home/noname/Documentos/lfu/output_files/lfu.pi
 ;     -- Dedicated logic registers            ; 89 / 33,216 ( < 1 % )  ;
 ;     -- I/O registers                        ; 0 / 1,377 ( 0 % )      ;
 ;                                             ;                        ;
-; Total LABs:  partially or completely used   ; 24 / 2,076 ( 1 % )     ;
+; Total LABs:  partially or completely used   ; 22 / 2,076 ( 1 % )     ;
 ; Virtual pins                                ; 0                      ;
 ; I/O pins                                    ; 12 / 475 ( 3 % )       ;
 ;     -- Clock pins                           ; 2 / 8 ( 25 % )         ;
@@ -223,7 +224,7 @@ The pin-out file can be found in /home/noname/Documentos/lfu/output_files/lfu.pi
 ; ASMI blocks                                 ; 0 / 1 ( 0 % )          ;
 ; CRC blocks                                  ; 0 / 1 ( 0 % )          ;
 ; Average interconnect usage (total/H/V)      ; 0% / 0% / 0%           ;
-; Peak interconnect usage (total/H/V)         ; 2% / 3% / 1%           ;
+; Peak interconnect usage (total/H/V)         ; 2% / 2% / 2%           ;
 ; Maximum fan-out                             ; 89                     ;
 ; Highest non-global fan-out                  ; 80                     ;
 ; Total fan-out                               ; 1298                   ;
@@ -258,7 +259,7 @@ The pin-out file can be found in /home/noname/Documentos/lfu/output_files/lfu.pi
 ; Total registers                             ; 89                    ; 0                              ;
 ;     -- Dedicated logic registers            ; 89 / 33216 ( < 1 % )  ; 0 / 33216 ( 0 % )              ;
 ;                                             ;                       ;                                ;
-; Total LABs:  partially or completely used   ; 24 / 2076 ( 1 % )     ; 0 / 2076 ( 0 % )               ;
+; Total LABs:  partially or completely used   ; 22 / 2076 ( 1 % )     ; 0 / 2076 ( 0 % )               ;
 ;                                             ;                       ;                                ;
 ; Virtual pins                                ; 0                     ; 0                              ;
 ; I/O pins                                    ; 12                    ; 0                              ;
@@ -307,13 +308,13 @@ The pin-out file can be found in /home/noname/Documentos/lfu/output_files/lfu.pi
 +------+-------+----------+--------------+--------------+-------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+-------------+----------------------+
 ; Name ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Cell number ; Combinational Fan-Out ; Registered Fan-Out ; Global ; Input Register ; Power Up High ; PCI I/O Enabled ; Bus Hold ; Weak Pull Up ; I/O Standard ; Termination ; Location assigned by ;
 +------+-------+----------+--------------+--------------+-------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+-------------+----------------------+
-; b1   ; C13   ; 3        ; 31           ; 36           ; 2           ; 4                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
-; b2   ; D17   ; 4        ; 46           ; 36           ; 0           ; 4                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
-; b3   ; H23   ; 5        ; 65           ; 27           ; 2           ; 4                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
-; b4   ; F16   ; 4        ; 44           ; 36           ; 1           ; 4                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
-; b5   ; D13   ; 3        ; 31           ; 36           ; 3           ; 4                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
-; clk  ; P2    ; 1        ; 0            ; 18           ; 2           ; 1                     ; 0                  ; yes    ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
-; rst  ; F15   ; 4        ; 44           ; 36           ; 2           ; 80                    ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; Fitter               ;
+; b1   ; G26   ; 5        ; 65           ; 27           ; 1           ; 4                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
+; b2   ; N23   ; 5        ; 65           ; 20           ; 2           ; 4                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
+; b3   ; P23   ; 6        ; 65           ; 18           ; 0           ; 4                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
+; b4   ; W26   ; 6        ; 65           ; 10           ; 2           ; 4                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
+; b5   ; V2    ; 1        ; 0            ; 12           ; 3           ; 4                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
+; clk  ; N2    ; 2        ; 0            ; 18           ; 0           ; 1                     ; 0                  ; yes    ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
+; rst  ; N25   ; 5        ; 65           ; 19           ; 0           ; 80                    ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
 +------+-------+----------+--------------+--------------+-------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+-------------+----------------------+
 
 
@@ -322,28 +323,28 @@ The pin-out file can be found in /home/noname/Documentos/lfu/output_files/lfu.pi
 +------+-------+----------+--------------+--------------+-------------+-----------------+------------------------+---------------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-------------+----------------------+------+----------------------+---------------------+
 ; Name ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Cell number ; Output Register ; Output Enable Register ; Power Up High ; PCI I/O Enabled ; Open Drain ; TRI Primitive ; Bus Hold ; Weak Pull Up ; I/O Standard ; Current Strength ; Termination ; Location assigned by ; Load ; Output Enable Source ; Output Enable Group ;
 +------+-------+----------+--------------+--------------+-------------+-----------------+------------------------+---------------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-------------+----------------------+------+----------------------+---------------------+
-; l1   ; H15   ; 4        ; 42           ; 36           ; 3           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
-; l2   ; G16   ; 4        ; 44           ; 36           ; 0           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
-; l3   ; H17   ; 4        ; 48           ; 36           ; 1           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
-; l4   ; D16   ; 4        ; 40           ; 36           ; 0           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
-; l5   ; G15   ; 4        ; 44           ; 36           ; 3           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; Fitter               ; 0 pF ; -                    ; -                   ;
+; l1   ; AE23  ; 7        ; 63           ; 0            ; 0           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; User                 ; 0 pF ; -                    ; -                   ;
+; l2   ; AF23  ; 7        ; 63           ; 0            ; 1           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; User                 ; 0 pF ; -                    ; -                   ;
+; l3   ; AB21  ; 7        ; 63           ; 0            ; 2           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; User                 ; 0 pF ; -                    ; -                   ;
+; l4   ; AC22  ; 7        ; 63           ; 0            ; 3           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; User                 ; 0 pF ; -                    ; -                   ;
+; l5   ; AD22  ; 7        ; 61           ; 0            ; 0           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; User                 ; 0 pF ; -                    ; -                   ;
 +------+-------+----------+--------------+--------------+-------------+-----------------+------------------------+---------------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-------------+----------------------+------+----------------------+---------------------+
 
 
-+-----------------------------------------------------------+
-; I/O Bank Usage                                            ;
-+----------+-----------------+---------------+--------------+
-; I/O Bank ; Usage           ; VCCIO Voltage ; VREF Voltage ;
-+----------+-----------------+---------------+--------------+
-; 1        ; 1 / 64 ( 2 % )  ; 3.3V          ; --           ;
-; 2        ; 2 / 59 ( 3 % )  ; 3.3V          ; --           ;
-; 3        ; 2 / 56 ( 4 % )  ; 3.3V          ; --           ;
-; 4        ; 8 / 58 ( 14 % ) ; 3.3V          ; --           ;
-; 5        ; 1 / 65 ( 2 % )  ; 3.3V          ; --           ;
-; 6        ; 1 / 59 ( 2 % )  ; 3.3V          ; --           ;
-; 7        ; 0 / 58 ( 0 % )  ; 3.3V          ; --           ;
-; 8        ; 0 / 56 ( 0 % )  ; 3.3V          ; --           ;
-+----------+-----------------+---------------+--------------+
++----------------------------------------------------------+
+; I/O Bank Usage                                           ;
++----------+----------------+---------------+--------------+
+; I/O Bank ; Usage          ; VCCIO Voltage ; VREF Voltage ;
++----------+----------------+---------------+--------------+
+; 1        ; 1 / 64 ( 2 % ) ; 3.3V          ; --           ;
+; 2        ; 3 / 59 ( 5 % ) ; 3.3V          ; --           ;
+; 3        ; 0 / 56 ( 0 % ) ; 3.3V          ; --           ;
+; 4        ; 0 / 58 ( 0 % ) ; 3.3V          ; --           ;
+; 5        ; 3 / 65 ( 5 % ) ; 3.3V          ; --           ;
+; 6        ; 3 / 59 ( 5 % ) ; 3.3V          ; --           ;
+; 7        ; 5 / 58 ( 9 % ) ; 3.3V          ; --           ;
+; 8        ; 0 / 56 ( 0 % ) ; 3.3V          ; --           ;
++----------+----------------+---------------+--------------+
 
 
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -421,7 +422,7 @@ The pin-out file can be found in /home/noname/Documentos/lfu/output_files/lfu.pi
 ; AB18     ; 215        ; 7        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; AB19     ;            ;          ; GND                                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; AB20     ; 225        ; 7        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; AB21     ; 242        ; 7        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; AB21     ; 242        ; 7        ; l3                                       ; output ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
 ; AB22     ;            ; 7        ; VCCIO7                                   ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
 ; AB23     ; 258        ; 6        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; AB24     ; 257        ; 6        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
@@ -448,7 +449,7 @@ The pin-out file can be found in /home/noname/Documentos/lfu/output_files/lfu.pi
 ; AC19     ; 222        ; 7        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; AC20     ; 226        ; 7        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; AC21     ; 237        ; 7        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; AC22     ; 241        ; 7        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; AC22     ; 241        ; 7        ; l4                                       ; output ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
 ; AC23     ; 245        ; 6        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; AC24     ;            ;          ; NC                                       ;        ;              ;         ; --         ;                 ; --       ; --           ;
 ; AC25     ; 260        ; 6        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
@@ -474,7 +475,7 @@ The pin-out file can be found in /home/noname/Documentos/lfu/output_files/lfu.pi
 ; AD19     ; 221        ; 7        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; AD20     ;            ; 7        ; VCCIO7                                   ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
 ; AD21     ; 238        ; 7        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; AD22     ; 240        ; 7        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; AD22     ; 240        ; 7        ; l5                                       ; output ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
 ; AD23     ; 239        ; 7        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; AD24     ; 249        ; 6        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; AD25     ; 248        ; 6        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
@@ -501,7 +502,7 @@ The pin-out file can be found in /home/noname/Documentos/lfu/output_files/lfu.pi
 ; AE20     ; 224        ; 7        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; AE21     ; 228        ; 7        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; AE22     ; 236        ; 7        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; AE23     ; 244        ; 7        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; AE23     ; 244        ; 7        ; l1                                       ; output ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
 ; AE24     ; 247        ; 6        ; ~LVDS150p/nCEO~                          ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; AE25     ; 246        ; 6        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; AE26     ;            ;          ; GND                                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
@@ -526,7 +527,7 @@ The pin-out file can be found in /home/noname/Documentos/lfu/output_files/lfu.pi
 ; AF20     ; 223        ; 7        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; AF21     ; 227        ; 7        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; AF22     ; 235        ; 7        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; AF23     ; 243        ; 7        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; AF23     ; 243        ; 7        ; l2                                       ; output ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
 ; AF24     ;            ; 7        ; VCCIO7                                   ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
 ; AF25     ;            ;          ; GND                                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; B1       ;            ;          ; GND                                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
@@ -567,7 +568,7 @@ The pin-out file can be found in /home/noname/Documentos/lfu/output_files/lfu.pi
 ; C10      ; 450        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; C11      ; 436        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; C12      ; 434        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; C13      ; 431        ; 3        ; b1                                       ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; C13      ; 431        ; 3        ; GND+                                     ;        ;              ;         ; Column I/O ;                 ; --       ; --           ;
 ; C14      ;            ;          ; GND                                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; C15      ; 421        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; C16      ; 418        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
@@ -593,11 +594,11 @@ The pin-out file can be found in /home/noname/Documentos/lfu/output_files/lfu.pi
 ; D10      ; 449        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; D11      ; 445        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; --       ; --           ;
 ; D12      ; 443        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; D13      ; 432        ; 3        ; b5                                       ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; D13      ; 432        ; 3        ; GND+                                     ;        ;              ;         ; Column I/O ;                 ; --       ; --           ;
 ; D14      ; 426        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; D15      ; 417        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; D16      ; 415        ; 4        ; l4                                       ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
-; D17      ; 403        ; 4        ; b2                                       ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; D16      ; 415        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; --       ; --           ;
+; D17      ; 403        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; D18      ; 396        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; D19      ; 392        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; D20      ; 387        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
@@ -647,8 +648,8 @@ The pin-out file can be found in /home/noname/Documentos/lfu/output_files/lfu.pi
 ; F12      ; 440        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; F13      ; 423        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; F14      ; 425        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; F15      ; 409        ; 4        ; rst                                      ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
-; F16      ; 408        ; 4        ; b4                                       ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; F15      ; 409        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; F16      ; 408        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; F17      ; 401        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; F18      ; 398        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; F19      ;            ;          ; GNDA_PLL2                                ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
@@ -673,8 +674,8 @@ The pin-out file can be found in /home/noname/Documentos/lfu/output_files/lfu.pi
 ; G12      ; 439        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; G13      ; 422        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; G14      ; 424        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; G15      ; 410        ; 4        ; l5                                       ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
-; G16      ; 407        ; 4        ; l2                                       ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; G15      ; 410        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
+; G16      ; 407        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; G17      ; 402        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; G18      ; 397        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; G19      ;            ;          ; VCCA_PLL2                                ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
@@ -684,7 +685,7 @@ The pin-out file can be found in /home/noname/Documentos/lfu/output_files/lfu.pi
 ; G23      ; 346        ; 5        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; G24      ; 345        ; 5        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; G25      ; 343        ; 5        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
-; G26      ; 342        ; 5        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
+; G26      ; 342        ; 5        ; b1                                       ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; Y               ; no       ; Off          ;
 ; H1       ; 37         ; 2        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; H2       ; 36         ; 2        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; H3       ; 32         ; 2        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
@@ -699,15 +700,15 @@ The pin-out file can be found in /home/noname/Documentos/lfu/output_files/lfu.pi
 ; H12      ; 455        ; 3        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; H13      ;            ;          ; GND                                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; H14      ;            ;          ; GND                                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
-; H15      ; 414        ; 4        ; l1                                       ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; H15      ; 414        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; H16      ; 413        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; H17      ; 400        ; 4        ; l3                                       ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; H17      ; 400        ; 4        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; H18      ;            ; 4        ; VCCIO4                                   ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
 ; H19      ; 335        ; 5        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; H20      ;            ;          ; VCCD_PLL2                                ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
 ; H21      ; 366        ; 5        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; H22      ;            ;          ; GND                                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
-; H23      ; 341        ; 5        ; b3                                       ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
+; H23      ; 341        ; 5        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; H24      ; 340        ; 5        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; H25      ; 337        ; 5        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; H26      ; 336        ; 5        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
@@ -816,7 +817,7 @@ The pin-out file can be found in /home/noname/Documentos/lfu/output_files/lfu.pi
 ; M25      ; 312        ; 5        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; M26      ;            ;          ; GND                                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; N1       ; 65         ; 2        ; GND+                                     ;        ;              ;         ; Row I/O    ;                 ; --       ; --           ;
-; N2       ; 64         ; 2        ; GND+                                     ;        ;              ;         ; Row I/O    ;                 ; --       ; --           ;
+; N2       ; 64         ; 2        ; clk                                      ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; Y               ; no       ; Off          ;
 ; N3       ; 62         ; 2        ; ^DATA0                                   ; input  ;              ;         ; --         ;                 ; --       ; --           ;
 ; N4       ; 63         ; 2        ; ^nCE                                     ;        ;              ;         ; --         ;                 ; --       ; --           ;
 ; N5       ;            ; 2        ; VCCIO2                                   ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
@@ -837,12 +838,12 @@ The pin-out file can be found in /home/noname/Documentos/lfu/output_files/lfu.pi
 ; N20      ; 315        ; 5        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; N21      ;            ;          ; NC                                       ;        ;              ;         ; --         ;                 ; --       ; --           ;
 ; N22      ;            ; 5        ; VCCIO5                                   ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
-; N23      ; 311        ; 5        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
+; N23      ; 311        ; 5        ; b2                                       ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; Y               ; no       ; Off          ;
 ; N24      ; 310        ; 5        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
-; N25      ; 309        ; 5        ; GND+                                     ;        ;              ;         ; Row I/O    ;                 ; --       ; --           ;
+; N25      ; 309        ; 5        ; rst                                      ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; Y               ; no       ; Off          ;
 ; N26      ; 308        ; 5        ; GND+                                     ;        ;              ;         ; Row I/O    ;                 ; --       ; --           ;
 ; P1       ; 68         ; 1        ; GND+                                     ;        ;              ;         ; Row I/O    ;                 ; --       ; --           ;
-; P2       ; 67         ; 1        ; clk                                      ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
+; P2       ; 67         ; 1        ; GND+                                     ;        ;              ;         ; Row I/O    ;                 ; --       ; --           ;
 ; P3       ; 69         ; 1        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; P4       ; 70         ; 1        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; P5       ;            ; 1        ; VCCIO1                                   ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
@@ -863,7 +864,7 @@ The pin-out file can be found in /home/noname/Documentos/lfu/output_files/lfu.pi
 ; P20      ; 301        ; 6        ; ^MSEL0                                   ;        ;              ;         ; --         ;                 ; --       ; --           ;
 ; P21      ; 300        ; 6        ; ^MSEL1                                   ;        ;              ;         ; --         ;                 ; --       ; --           ;
 ; P22      ;            ; 6        ; VCCIO6                                   ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
-; P23      ; 305        ; 6        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
+; P23      ; 305        ; 6        ; b3                                       ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; Y               ; no       ; Off          ;
 ; P24      ; 304        ; 6        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; P25      ; 307        ; 6        ; GND+                                     ;        ;              ;         ; Row I/O    ;                 ; --       ; --           ;
 ; P26      ; 306        ; 6        ; GND+                                     ;        ;              ;         ; Row I/O    ;                 ; --       ; --           ;
@@ -946,7 +947,7 @@ The pin-out file can be found in /home/noname/Documentos/lfu/output_files/lfu.pi
 ; U25      ; 285        ; 6        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; U26      ; 286        ; 6        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; V1       ; 90         ; 1        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
-; V2       ; 91         ; 1        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
+; V2       ; 91         ; 1        ; b5                                       ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; Y               ; no       ; Off          ;
 ; V3       ; 95         ; 1        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; V4       ; 94         ; 1        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; V5       ; 104        ; 1        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
@@ -996,7 +997,7 @@ The pin-out file can be found in /home/noname/Documentos/lfu/output_files/lfu.pi
 ; W23      ; 272        ; 6        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; W24      ; 271        ; 6        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; W25      ; 273        ; 6        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
-; W26      ; 274        ; 6        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
+; W26      ; 274        ; 6        ; b4                                       ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; Y               ; no       ; Off          ;
 ; Y1       ; 103        ; 1        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; Y2       ;            ;          ; NC                                       ;        ;              ;         ; --         ;                 ; --       ; --           ;
 ; Y3       ; 108        ; 1        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
@@ -1086,120 +1087,48 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; l4   ; Output   ; --            ; --            ; --                    ; --  ;
 ; l5   ; Output   ; --            ; --            ; --                    ; --  ;
 ; clk  ; Input    ; (0) 171 ps    ; (0) 171 ps    ; --                    ; --  ;
-; b1   ; Input    ; (0) 170 ps    ; (0) 170 ps    ; --                    ; --  ;
-; b5   ; Input    ; (0) 170 ps    ; (0) 170 ps    ; --                    ; --  ;
-; b4   ; Input    ; (6) 2514 ps   ; (6) 2514 ps   ; --                    ; --  ;
+; b1   ; Input    ; (6) 2523 ps   ; (6) 2523 ps   ; --                    ; --  ;
+; b5   ; Input    ; (6) 2523 ps   ; (6) 2523 ps   ; --                    ; --  ;
+; b4   ; Input    ; (6) 2523 ps   ; (6) 2523 ps   ; --                    ; --  ;
 ; b3   ; Input    ; (6) 2523 ps   ; (6) 2523 ps   ; --                    ; --  ;
-; b2   ; Input    ; (6) 2514 ps   ; (6) 2514 ps   ; --                    ; --  ;
-; rst  ; Input    ; (6) 2514 ps   ; (6) 2514 ps   ; --                    ; --  ;
+; b2   ; Input    ; (6) 2523 ps   ; (6) 2523 ps   ; --                    ; --  ;
+; rst  ; Input    ; (0) 171 ps    ; (0) 171 ps    ; --                    ; --  ;
 +------+----------+---------------+---------------+-----------------------+-----+
 
 
-+------------------------------------------------------------+
-; Pad To Core Delay Chain Fanout                             ;
-+------------------------------+-------------------+---------+
-; Source Pin / Fanout          ; Pad To Core Index ; Setting ;
-+------------------------------+-------------------+---------+
-; clk                          ;                   ;         ;
-; b1                           ;                   ;         ;
-; b5                           ;                   ;         ;
-; b4                           ;                   ;         ;
-;      - Add3~0                ; 0                 ; 6       ;
-;      - addedIndex~1          ; 0                 ; 6       ;
-;      - addedIndex~2          ; 0                 ; 6       ;
-;      - addedIndex~5          ; 0                 ; 6       ;
-; b3                           ;                   ;         ;
-;      - Add2~0                ; 0                 ; 6       ;
-;      - addedIndex~1          ; 0                 ; 6       ;
-;      - addedIndex~2          ; 0                 ; 6       ;
-;      - addedIndex~5          ; 0                 ; 6       ;
-; b2                           ;                   ;         ;
-;      - Add1~0                ; 0                 ; 6       ;
-;      - addedIndex~0          ; 0                 ; 6       ;
-;      - addedIndex~2          ; 0                 ; 6       ;
-;      - addedIndex~4          ; 0                 ; 6       ;
-; rst                          ;                   ;         ;
-;      - l1~reg0               ; 0                 ; 6       ;
-;      - l2~reg0               ; 0                 ; 6       ;
-;      - l3~reg0               ; 0                 ; 6       ;
-;      - l4~reg0               ; 0                 ; 6       ;
-;      - l5~reg0               ; 0                 ; 6       ;
-;      - used_counter[1][6]~13 ; 0                 ; 6       ;
-;      - used_counter~54       ; 0                 ; 6       ;
-;      - used_counter~55       ; 0                 ; 6       ;
-;      - used_counter~56       ; 0                 ; 6       ;
-;      - used_counter~57       ; 0                 ; 6       ;
-;      - used_counter~58       ; 0                 ; 6       ;
-;      - used_counter~59       ; 0                 ; 6       ;
-;      - used_counter~60       ; 0                 ; 6       ;
-;      - used_counter~61       ; 0                 ; 6       ;
-;      - used_counter~62       ; 0                 ; 6       ;
-;      - used_counter~63       ; 0                 ; 6       ;
-;      - used_counter~64       ; 0                 ; 6       ;
-;      - used_counter~65       ; 0                 ; 6       ;
-;      - used_counter~66       ; 0                 ; 6       ;
-;      - used_counter~67       ; 0                 ; 6       ;
-;      - used_counter~68       ; 0                 ; 6       ;
-;      - used_counter~69       ; 0                 ; 6       ;
-;      - addedIndex[2]~6       ; 0                 ; 6       ;
-;      - used_counter~70       ; 0                 ; 6       ;
-;      - used_counter~71       ; 0                 ; 6       ;
-;      - used_counter~72       ; 0                 ; 6       ;
-;      - used_counter~73       ; 0                 ; 6       ;
-;      - used_counter~74       ; 0                 ; 6       ;
-;      - used_counter~76       ; 0                 ; 6       ;
-;      - used_counter~77       ; 0                 ; 6       ;
-;      - used_counter~78       ; 0                 ; 6       ;
-;      - used_counter~80       ; 0                 ; 6       ;
-;      - used_counter~81       ; 0                 ; 6       ;
-;      - used_counter~82       ; 0                 ; 6       ;
-;      - used_counter~83       ; 0                 ; 6       ;
-;      - used_counter~84       ; 0                 ; 6       ;
-;      - used_counter~85       ; 0                 ; 6       ;
-;      - used_counter~86       ; 0                 ; 6       ;
-;      - used_counter~87       ; 0                 ; 6       ;
-;      - used_counter~89       ; 0                 ; 6       ;
-;      - used_counter~90       ; 0                 ; 6       ;
-;      - used_counter~91       ; 0                 ; 6       ;
-;      - used_counter~92       ; 0                 ; 6       ;
-;      - used_counter~93       ; 0                 ; 6       ;
-;      - used_counter~94       ; 0                 ; 6       ;
-;      - used_counter~95       ; 0                 ; 6       ;
-;      - used_counter~96       ; 0                 ; 6       ;
-;      - timer:t|timedClock~0  ; 0                 ; 6       ;
-;      - timer:t|counter~0     ; 0                 ; 6       ;
-;      - timer:t|counter~1     ; 0                 ; 6       ;
-;      - timer:t|counter~2     ; 0                 ; 6       ;
-;      - timer:t|counter~3     ; 0                 ; 6       ;
-;      - timer:t|counter~4     ; 0                 ; 6       ;
-;      - timer:t|counter~5     ; 0                 ; 6       ;
-;      - timer:t|counter~6     ; 0                 ; 6       ;
-;      - timer:t|counter~7     ; 0                 ; 6       ;
-;      - timer:t|counter~8     ; 0                 ; 6       ;
-;      - timer:t|counter~9     ; 0                 ; 6       ;
-;      - timer:t|counter~10    ; 0                 ; 6       ;
-;      - timer:t|counter~11    ; 0                 ; 6       ;
-;      - timer:t|counter~12    ; 0                 ; 6       ;
-;      - timer:t|counter~13    ; 0                 ; 6       ;
-;      - timer:t|counter~14    ; 0                 ; 6       ;
-;      - timer:t|counter~15    ; 0                 ; 6       ;
-;      - timer:t|counter~16    ; 0                 ; 6       ;
-;      - timer:t|counter~17    ; 0                 ; 6       ;
-;      - timer:t|counter~18    ; 0                 ; 6       ;
-;      - timer:t|counter~19    ; 0                 ; 6       ;
-;      - timer:t|counter~20    ; 0                 ; 6       ;
-;      - timer:t|counter~21    ; 0                 ; 6       ;
-;      - timer:t|counter~22    ; 0                 ; 6       ;
-;      - timer:t|counter~23    ; 0                 ; 6       ;
-;      - timer:t|counter~24    ; 0                 ; 6       ;
-;      - timer:t|counter~25    ; 0                 ; 6       ;
-;      - timer:t|counter~26    ; 0                 ; 6       ;
-;      - timer:t|counter~27    ; 0                 ; 6       ;
-;      - timer:t|counter~28    ; 0                 ; 6       ;
-;      - timer:t|counter~29    ; 0                 ; 6       ;
-;      - timer:t|counter~30    ; 0                 ; 6       ;
-;      - timer:t|counter~31    ; 0                 ; 6       ;
-+------------------------------+-------------------+---------+
++---------------------------------------------------+
+; Pad To Core Delay Chain Fanout                    ;
++---------------------+-------------------+---------+
+; Source Pin / Fanout ; Pad To Core Index ; Setting ;
++---------------------+-------------------+---------+
+; clk                 ;                   ;         ;
+; b1                  ;                   ;         ;
+;      - Add0~0       ; 1                 ; 6       ;
+;      - addedIndex~0 ; 1                 ; 6       ;
+;      - addedIndex~2 ; 1                 ; 6       ;
+;      - addedIndex~4 ; 1                 ; 6       ;
+; b5                  ;                   ;         ;
+;      - Add4~0       ; 0                 ; 6       ;
+;      - addedIndex~1 ; 0                 ; 6       ;
+;      - addedIndex~3 ; 0                 ; 6       ;
+;      - addedIndex~5 ; 0                 ; 6       ;
+; b4                  ;                   ;         ;
+;      - Add3~0       ; 0                 ; 6       ;
+;      - addedIndex~1 ; 0                 ; 6       ;
+;      - addedIndex~2 ; 0                 ; 6       ;
+;      - addedIndex~5 ; 0                 ; 6       ;
+; b3                  ;                   ;         ;
+;      - Add2~0       ; 0                 ; 6       ;
+;      - addedIndex~1 ; 0                 ; 6       ;
+;      - addedIndex~2 ; 0                 ; 6       ;
+;      - addedIndex~5 ; 0                 ; 6       ;
+; b2                  ;                   ;         ;
+;      - Add1~0       ; 0                 ; 6       ;
+;      - addedIndex~0 ; 0                 ; 6       ;
+;      - addedIndex~2 ; 0                 ; 6       ;
+;      - addedIndex~4 ; 0                 ; 6       ;
+; rst                 ;                   ;         ;
++---------------------+-------------------+---------+
 
 
 +----------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -1207,11 +1136,11 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------+--------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
 ; Name                  ; Location           ; Fan-Out ; Usage        ; Global ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
 +-----------------------+--------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
-; addedIndex[2]~6       ; LCCOMB_X44_Y28_N22 ; 4       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; clk                   ; PIN_P2             ; 89      ; Clock        ; yes    ; Global Clock         ; GCLK3            ; --                        ;
-; lowestValue[7]~35     ; LCCOMB_X47_Y27_N4  ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; rst                   ; PIN_F15            ; 80      ; Sync. clear  ; no     ; --                   ; --               ; --                        ;
-; used_counter[1][6]~13 ; LCCOMB_X44_Y28_N12 ; 45      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; addedIndex[2]~6       ; LCCOMB_X49_Y21_N8  ; 4       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; clk                   ; PIN_N2             ; 89      ; Clock        ; yes    ; Global Clock         ; GCLK2            ; --                        ;
+; lowestValue[7]~35     ; LCCOMB_X42_Y19_N10 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; rst                   ; PIN_N25            ; 80      ; Sync. clear  ; no     ; --                   ; --               ; --                        ;
+; used_counter[1][6]~13 ; LCCOMB_X49_Y21_N10 ; 45      ; Clock enable ; no     ; --                   ; --               ; --                        ;
 +-----------------------+--------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
 
 
@@ -1220,7 +1149,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +------+----------+---------+----------------------+------------------+---------------------------+
 ; Name ; Location ; Fan-Out ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
 +------+----------+---------+----------------------+------------------+---------------------------+
-; clk  ; PIN_P2   ; 89      ; Global Clock         ; GCLK3            ; --                        ;
+; clk  ; PIN_N2   ; 89      ; Global Clock         ; GCLK2            ; --                        ;
 +------+----------+---------+----------------------+------------------+---------------------------+
 
 
@@ -1726,49 +1655,48 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------------+------------------------+
 ; Other Routing Resource Type ; Usage                  ;
 +-----------------------------+------------------------+
-; Block interconnects         ; 481 / 94,460 ( < 1 % ) ;
-; C16 interconnects           ; 5 / 3,315 ( < 1 % )    ;
-; C4 interconnects            ; 126 / 60,840 ( < 1 % ) ;
-; Direct links                ; 171 / 94,460 ( < 1 % ) ;
+; Block interconnects         ; 493 / 94,460 ( < 1 % ) ;
+; C16 interconnects           ; 4 / 3,315 ( < 1 % )    ;
+; C4 interconnects            ; 169 / 60,840 ( < 1 % ) ;
+; Direct links                ; 174 / 94,460 ( < 1 % ) ;
 ; Global clocks               ; 1 / 16 ( 6 % )         ;
-; Local interconnects         ; 128 / 33,216 ( < 1 % ) ;
-; R24 interconnects           ; 4 / 3,091 ( < 1 % )    ;
-; R4 interconnects            ; 258 / 81,294 ( < 1 % ) ;
+; Local interconnects         ; 111 / 33,216 ( < 1 % ) ;
+; R24 interconnects           ; 12 / 3,091 ( < 1 % )   ;
+; R4 interconnects            ; 220 / 81,294 ( < 1 % ) ;
 +-----------------------------+------------------------+
 
 
 +----------------------------------------------------------------------------+
 ; LAB Logic Elements                                                         ;
 +---------------------------------------------+------------------------------+
-; Number of Logic Elements  (Average = 13.67) ; Number of LABs  (Total = 24) ;
+; Number of Logic Elements  (Average = 14.91) ; Number of LABs  (Total = 22) ;
 +---------------------------------------------+------------------------------+
 ; 1                                           ; 0                            ;
-; 2                                           ; 2                            ;
+; 2                                           ; 1                            ;
 ; 3                                           ; 0                            ;
 ; 4                                           ; 0                            ;
-; 5                                           ; 1                            ;
+; 5                                           ; 0                            ;
 ; 6                                           ; 0                            ;
-; 7                                           ; 1                            ;
+; 7                                           ; 0                            ;
 ; 8                                           ; 0                            ;
 ; 9                                           ; 0                            ;
-; 10                                          ; 0                            ;
+; 10                                          ; 1                            ;
 ; 11                                          ; 0                            ;
 ; 12                                          ; 0                            ;
-; 13                                          ; 2                            ;
-; 14                                          ; 1                            ;
+; 13                                          ; 0                            ;
+; 14                                          ; 2                            ;
 ; 15                                          ; 0                            ;
-; 16                                          ; 17                           ;
+; 16                                          ; 18                           ;
 +---------------------------------------------+------------------------------+
 
 
 +-------------------------------------------------------------------+
 ; LAB-wide Signals                                                  ;
 +------------------------------------+------------------------------+
-; LAB-wide Signals  (Average = 1.04) ; Number of LABs  (Total = 24) ;
+; LAB-wide Signals  (Average = 1.14) ; Number of LABs  (Total = 22) ;
 +------------------------------------+------------------------------+
 ; 1 Clock                            ; 14                           ;
-; 1 Clock enable                     ; 9                            ;
-; 1 Sync. clear                      ; 1                            ;
+; 1 Clock enable                     ; 10                           ;
 ; 2 Clock enables                    ; 1                            ;
 +------------------------------------+------------------------------+
 
@@ -1776,33 +1704,33 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------------------------------------------------------------+
 ; LAB Signals Sourced                                                         ;
 +----------------------------------------------+------------------------------+
-; Number of Signals Sourced  (Average = 15.92) ; Number of LABs  (Total = 24) ;
+; Number of Signals Sourced  (Average = 17.36) ; Number of LABs  (Total = 22) ;
 +----------------------------------------------+------------------------------+
 ; 0                                            ; 0                            ;
 ; 1                                            ; 0                            ;
-; 2                                            ; 2                            ;
+; 2                                            ; 0                            ;
 ; 3                                            ; 0                            ;
-; 4                                            ; 0                            ;
+; 4                                            ; 1                            ;
 ; 5                                            ; 0                            ;
 ; 6                                            ; 0                            ;
 ; 7                                            ; 0                            ;
 ; 8                                            ; 0                            ;
-; 9                                            ; 5                            ;
-; 10                                           ; 0                            ;
-; 11                                           ; 1                            ;
+; 9                                            ; 3                            ;
+; 10                                           ; 3                            ;
+; 11                                           ; 0                            ;
 ; 12                                           ; 0                            ;
-; 13                                           ; 1                            ;
-; 14                                           ; 2                            ;
+; 13                                           ; 0                            ;
+; 14                                           ; 1                            ;
 ; 15                                           ; 0                            ;
-; 16                                           ; 4                            ;
+; 16                                           ; 3                            ;
 ; 17                                           ; 1                            ;
 ; 18                                           ; 0                            ;
-; 19                                           ; 0                            ;
-; 20                                           ; 1                            ;
+; 19                                           ; 2                            ;
+; 20                                           ; 0                            ;
 ; 21                                           ; 0                            ;
 ; 22                                           ; 0                            ;
 ; 23                                           ; 0                            ;
-; 24                                           ; 1                            ;
+; 24                                           ; 2                            ;
 ; 25                                           ; 3                            ;
 ; 26                                           ; 1                            ;
 ; 27                                           ; 1                            ;
@@ -1813,64 +1741,64 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------------------------------------------------------------------------------+
 ; LAB Signals Sourced Out                                                         ;
 +--------------------------------------------------+------------------------------+
-; Number of Signals Sourced Out  (Average = 10.21) ; Number of LABs  (Total = 24) ;
+; Number of Signals Sourced Out  (Average = 11.18) ; Number of LABs  (Total = 22) ;
 +--------------------------------------------------+------------------------------+
 ; 0                                                ; 0                            ;
 ; 1                                                ; 0                            ;
-; 2                                                ; 2                            ;
+; 2                                                ; 1                            ;
 ; 3                                                ; 0                            ;
 ; 4                                                ; 0                            ;
-; 5                                                ; 1                            ;
-; 6                                                ; 0                            ;
-; 7                                                ; 2                            ;
-; 8                                                ; 2                            ;
-; 9                                                ; 2                            ;
-; 10                                               ; 5                            ;
+; 5                                                ; 0                            ;
+; 6                                                ; 1                            ;
+; 7                                                ; 1                            ;
+; 8                                                ; 1                            ;
+; 9                                                ; 3                            ;
+; 10                                               ; 4                            ;
 ; 11                                               ; 1                            ;
-; 12                                               ; 2                            ;
-; 13                                               ; 2                            ;
-; 14                                               ; 1                            ;
-; 15                                               ; 1                            ;
-; 16                                               ; 3                            ;
+; 12                                               ; 1                            ;
+; 13                                               ; 3                            ;
+; 14                                               ; 0                            ;
+; 15                                               ; 2                            ;
+; 16                                               ; 4                            ;
 +--------------------------------------------------+------------------------------+
 
 
 +-----------------------------------------------------------------------------+
 ; LAB Distinct Inputs                                                         ;
 +----------------------------------------------+------------------------------+
-; Number of Distinct Inputs  (Average = 19.21) ; Number of LABs  (Total = 24) ;
+; Number of Distinct Inputs  (Average = 21.18) ; Number of LABs  (Total = 22) ;
 +----------------------------------------------+------------------------------+
 ; 0                                            ; 0                            ;
 ; 1                                            ; 0                            ;
-; 2                                            ; 1                            ;
+; 2                                            ; 0                            ;
 ; 3                                            ; 0                            ;
 ; 4                                            ; 0                            ;
 ; 5                                            ; 0                            ;
 ; 6                                            ; 0                            ;
-; 7                                            ; 1                            ;
-; 8                                            ; 2                            ;
+; 7                                            ; 0                            ;
+; 8                                            ; 1                            ;
 ; 9                                            ; 0                            ;
 ; 10                                           ; 0                            ;
-; 11                                           ; 0                            ;
-; 12                                           ; 0                            ;
-; 13                                           ; 1                            ;
-; 14                                           ; 1                            ;
+; 11                                           ; 1                            ;
+; 12                                           ; 1                            ;
+; 13                                           ; 0                            ;
+; 14                                           ; 0                            ;
 ; 15                                           ; 1                            ;
-; 16                                           ; 2                            ;
+; 16                                           ; 1                            ;
 ; 17                                           ; 1                            ;
-; 18                                           ; 2                            ;
-; 19                                           ; 0                            ;
+; 18                                           ; 1                            ;
+; 19                                           ; 2                            ;
 ; 20                                           ; 0                            ;
 ; 21                                           ; 1                            ;
-; 22                                           ; 0                            ;
-; 23                                           ; 3                            ;
-; 24                                           ; 0                            ;
-; 25                                           ; 2                            ;
-; 26                                           ; 2                            ;
+; 22                                           ; 2                            ;
+; 23                                           ; 0                            ;
+; 24                                           ; 2                            ;
+; 25                                           ; 3                            ;
+; 26                                           ; 0                            ;
 ; 27                                           ; 1                            ;
-; 28                                           ; 0                            ;
+; 28                                           ; 2                            ;
 ; 29                                           ; 1                            ;
-; 30                                           ; 1                            ;
+; 30                                           ; 0                            ;
 ; 31                                           ; 1                            ;
 +----------------------------------------------+------------------------------+
 
@@ -1920,41 +1848,15 @@ Info (169124): Fitter converted 3 user pins into dedicated programming pins
     Info (169125): Pin ~ASDO~ is reserved at location E3
     Info (169125): Pin ~nCSO~ is reserved at location D3
     Info (169125): Pin ~LVDS150p/nCEO~ is reserved at location AE24
-Critical Warning (169085): No exact pin location assignment(s) for 12 pins of 12 total pins
-    Info (169086): Pin l1 not assigned to an exact location on the device
-    Info (169086): Pin l2 not assigned to an exact location on the device
-    Info (169086): Pin l3 not assigned to an exact location on the device
-    Info (169086): Pin l4 not assigned to an exact location on the device
-    Info (169086): Pin l5 not assigned to an exact location on the device
-    Info (169086): Pin clk not assigned to an exact location on the device
-    Info (169086): Pin b1 not assigned to an exact location on the device
-    Info (169086): Pin b5 not assigned to an exact location on the device
-    Info (169086): Pin b4 not assigned to an exact location on the device
-    Info (169086): Pin b3 not assigned to an exact location on the device
-    Info (169086): Pin b2 not assigned to an exact location on the device
-    Info (169086): Pin rst not assigned to an exact location on the device
 Critical Warning (332012): Synopsys Design Constraints File file not found: 'lfu.sdc'. A Synopsys Design Constraints File is required by the TimeQuest Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
 Info (332144): No user constrained base clocks found in the design
 Info (332130): Timing requirements not specified -- quality metrics such as performance may be sacrificed to reduce compilation time.
-Info (176353): Automatically promoted node clk (placed in PIN P2 (CLK2, LVDSCLK1p, Input))
-    Info (176355): Automatically promoted destinations to use location or clock signal Global Clock CLKCTRL_G3
+Info (176353): Automatically promoted node clk (placed in PIN N2 (CLK0, LVDSCLK0p, Input))
+    Info (176355): Automatically promoted destinations to use location or clock signal Global Clock CLKCTRL_G2
 Info (176233): Starting register packing
 Info (176235): Finished register packing
     Extra Info (176219): No registers were packed into other blocks
-Info (176214): Statistics of I/O pins that need to be placed that use the same VCCIO and VREF, before I/O pin placement
-    Info (176211): Number of I/O pins in group: 11 (unused VREF, 3.3V VCCIO, 6 input, 5 output, 0 bidirectional)
-        Info (176212): I/O standards used: 3.3-V LVTTL.
-Info (176215): I/O bank details before I/O pin placement
-    Info (176214): Statistics of I/O banks
-        Info (176213): I/O bank number 1 does not use VREF pins and has undetermined VCCIO pins. 1 total pin(s) used --  63 pins available
-        Info (176213): I/O bank number 2 does not use VREF pins and has undetermined VCCIO pins. 2 total pin(s) used --  57 pins available
-        Info (176213): I/O bank number 3 does not use VREF pins and has undetermined VCCIO pins. 0 total pin(s) used --  56 pins available
-        Info (176213): I/O bank number 4 does not use VREF pins and has undetermined VCCIO pins. 0 total pin(s) used --  58 pins available
-        Info (176213): I/O bank number 5 does not use VREF pins and has undetermined VCCIO pins. 0 total pin(s) used --  65 pins available
-        Info (176213): I/O bank number 6 does not use VREF pins and has undetermined VCCIO pins. 1 total pin(s) used --  58 pins available
-        Info (176213): I/O bank number 7 does not use VREF pins and has undetermined VCCIO pins. 0 total pin(s) used --  58 pins available
-        Info (176213): I/O bank number 8 does not use VREF pins and has undetermined VCCIO pins. 0 total pin(s) used --  56 pins available
-Info (171121): Fitter preparation operations ending: elapsed time is 00:00:00
+Info (171121): Fitter preparation operations ending: elapsed time is 00:00:01
 Info (170189): Fitter placement preparation operations beginning
 Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:00
 Info (170191): Fitter placement operations beginning
@@ -1962,8 +1864,8 @@ Info (170137): Fitter placement was successful
 Info (170192): Fitter placement operations ending: elapsed time is 00:00:01
 Info (170193): Fitter routing operations beginning
 Info (170195): Router estimated average interconnect usage is 0% of the available device resources
-    Info (170196): Router estimated peak interconnect usage is 2% of the available device resources in the region that extends from location X44_Y24 to location X54_Y36
-Info (170194): Fitter routing operations ending: elapsed time is 00:00:00
+    Info (170196): Router estimated peak interconnect usage is 1% of the available device resources in the region that extends from location X44_Y12 to location X54_Y23
+Info (170194): Fitter routing operations ending: elapsed time is 00:00:01
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
 Info (11888): Total time spent on timing analysis during the Fitter is 0.24 seconds.
@@ -1977,14 +1879,14 @@ Warning (306006): Found 5 output pins without output pin load capacitance assign
 Info (306005): Delay annotation completed successfully
 Info (306004): Started post-fitting delay annotation
 Info (306005): Delay annotation completed successfully
-Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:00
+Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:01
 Warning (169174): The Reserve All Unused Pins setting has not been specified, and will default to 'As output driving ground'.
 Info (144001): Generated suppressed messages file /home/noname/Documentos/lfu/output_files/lfu.fit.smsg
-Info: Quartus II 64-Bit Fitter was successful. 0 errors, 6 warnings
+Info: Quartus II 64-Bit Fitter was successful. 0 errors, 5 warnings
     Info: Peak virtual memory: 709 megabytes
-    Info: Processing ended: Sat May  6 14:03:26 2023
-    Info: Elapsed time: 00:00:05
-    Info: Total CPU time (on all processors): 00:00:05
+    Info: Processing ended: Sun May  7 21:04:14 2023
+    Info: Elapsed time: 00:00:06
+    Info: Total CPU time (on all processors): 00:00:06
 
 
 +----------------------------+

@@ -8,11 +8,9 @@ entity lfu is
         b2              : in     vl_logic;
         b3              : in     vl_logic;
         b4              : in     vl_logic;
-        b5              : in     vl_logic;
         l1              : out    vl_logic;
         l2              : out    vl_logic;
         l3              : out    vl_logic;
-        l4              : out    vl_logic;
-        l5              : out    vl_logic
+        l4              : out    vl_logic
     );
 end lfu;

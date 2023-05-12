@@ -1,16 +1,11 @@
-/home/noname/Documentos/lfu/lfu.sv {1 {vlog -work work -sv /home/noname/Documentos/lfu/lfu.sv
+/home/noname/Documentos/lfu/lfu.sv {2 {vlog -work work -sv /home/noname/Documentos/lfu/lfu.sv
 Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 -- Compiling module lfu
+** Warning: /home/noname/Documentos/lfu/lfu.sv(32): (vlog-2182) 'lowestValue' might be read before written in always_comb block.
+** Warning: /home/noname/Documentos/lfu/lfu.sv(32): (vlog-2182) 'addedIndex' might be read before written in always_comb block.
 
 Top level modules:
 	lfu
-
-} {} {}} /home/noname/Documentos/lfu/tb_lfu.sv {1 {vlog -work work -sv /home/noname/Documentos/lfu/tb_lfu.sv
-Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
--- Compiling module tb_lfu
-
-Top level modules:
-	tb_lfu
 
 } {} {}} /home/noname/Documentos/lfu/timer.sv {1 {vlog -work work -sv /home/noname/Documentos/lfu/timer.sv
 Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
