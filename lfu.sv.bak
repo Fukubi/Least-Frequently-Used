@@ -14,12 +14,22 @@ module lfu(clk, rst, b1, b2, b3, b4, l1, l2, l3, l4);
   timer t(.clock(clk), .timedClock(timedClock), .rst(rst));
 
   always_comb begin
-    if (rst) CurrentState = BEGIN;
-    else CurrentState = NextState;
+    if (rst) begin
+      CurrentState = BEGIN;
+    end else begin 
+      CurrentState = NextState;
+    end
+  end
+
+  always_comb begin
+    //used_counter = 32'd0;
+
+    lowestValue = used_counter[0];
 
     case (CurrentState)
       BEGIN: begin
         used_counter = 32'd0;
+        addedIndex = 5'd16;
 
         l1 = 1'b0;
         l2 = 1'b0;
@@ -27,63 +37,47 @@ module lfu(clk, rst, b1, b2, b3, b4, l1, l2, l3, l4);
         l4 = 1'b0;
       end
       INITIAL: begin
-        if (used_counter[0] && used_counter[1] && used_counter[2] && used_counter[3] && used_counter[4]) begin
+        addedIndex = 5'd16;
+
+        l1 = used_counter[0] ? 1'b1 : 1'b0;
+        l2 = used_counter[1] ? 1'b1 : 1'b0;
+        l3 = used_counter[2] ? 1'b1 : 1'b0;
+        l4 = used_counter[3] ? 1'b1 : 1'b0;
+      end
+      ADD: begin
+        l1 = used_counter[0] ? 1'b1 : 1'b0;
+        l2 = used_counter[1] ? 1'b1 : 1'b0;
+        l3 = used_counter[2] ? 1'b1 : 1'b0;
+        l4 = used_counter[3] ? 1'b1 : 1'b0;
+        
+        if (b1) begin
+          used_counter[0]++;
+          addedIndex = 5'd0;
+        end else if (b2) begin
+          used_counter[1]++;
+          addedIndex = 5'd1;
+        end else if (b3) begin
+          used_counter[2]++;
+          addedIndex = 5'd2;
+        end else if (b4) begin
+          used_counter[3]++;
+          addedIndex = 5'd3;
+        end else begin
+          addedIndex = 5'd0;
+        end
+        
+        if (used_counter[0] && used_counter[1] && used_counter[2] && used_counter[3]) begin
           for (reg [3:0] i = 4'd0; i < 4'd4; i++) begin
             if ((lowestValue > used_counter[i]) && (i != addedIndex)) begin
               lowestValue = used_counter[i];
             end
           end
 
-          for (reg [4:0] i = 5'd0; i < 5'd5; i++) begin
-            if (lowestValue == used_counter[i] && i != addedIndex) begin
+          for (reg [3:0] i = 4'd0; i < 4'd4; i++) begin
+            if (lowestValue == used_counter[i] && (i != addedIndex)) begin
               used_counter[i] = 8'd0;
             end
           end
-        end
-
-        if (used_counter[0]) begin
-          l1 <= 1'd1;
-        end else begin
-          l1 <= 1'd0;
-        end
-
-        if (used_counter[1]) begin
-          l2 <= 1'd1;
-        end else begin
-          l2 <= 1'd0;
-        end
-
-        if (used_counter[2]) begin
-          l3 <= 1'd1;
-        end else begin
-          l3 <= 1'd0;
-        end
-
-        if (used_counter[3]) begin
-          l4 <= 1'd1;
-        end else begin
-          l4 <= 1'd0;
-        end
-      end
-      ADD: begin
-        if (b1) begin
-          used_counter[0]++;
-          addedIndex = 5'd0;
-        end
-
-        if (b2) begin
-          used_counter[1]++;
-          addedIndex = 5'd1;
-        end
-
-        if (b3) begin
-          used_counter[2]++;
-          addedIndex = 5'd2;
-        end
-
-        if (b4) begin
-          used_counter[3]++;
-          addedIndex = 5'd3;
         end
       end
     endcase

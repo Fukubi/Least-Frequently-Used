@@ -31,6 +31,7 @@ module tb_lfu;
 		{rst, b1, b2, b3, b4} = 5'b0_0_0_0_0; @(negedge timedClock) xpect(1'b0, 1'b0, 1'b0, 1'b0);
 		
 		{rst, b1, b2, b3, b4} = 5'b0_1_0_0_0; @(negedge timedClock) xpect(1'b0, 1'b0, 1'b0, 1'b0);
+		{rst, b1, b2, b3, b4} = 5'b0_1_0_0_0; @(negedge timedClock) xpect(1'b0, 1'b0, 1'b0, 1'b0);
 		{rst, b1, b2, b3, b4} = 5'b0_1_0_0_0; @(negedge timedClock) xpect(1'b1, 1'b0, 1'b0, 1'b0);
 		
 		{rst, b1, b2, b3, b4} = 5'b0_1_0_0_0; @(negedge timedClock) xpect(1'b1, 1'b0, 1'b0, 1'b0);
@@ -49,9 +50,6 @@ module tb_lfu;
 		{rst, b1, b2, b3, b4} = 5'b0_0_1_0_0; @(negedge timedClock) xpect(1'b1, 1'b1, 1'b0, 1'b0);
 		
 		{rst, b1, b2, b3, b4} = 5'b0_0_0_1_0; @(negedge timedClock) xpect(1'b1, 1'b1, 1'b0, 1'b0);
-		{rst, b1, b2, b3, b4} = 5'b0_0_0_1_0; @(negedge timedClock) xpect(1'b1, 1'b1, 1'b1, 1'b0);
-		
-		{rst, b1, b2, b3, b4} = 5'b0_0_0_1_0; @(negedge timedClock) xpect(1'b1, 1'b1, 1'b1, 1'b0);
 		{rst, b1, b2, b3, b4} = 5'b0_0_0_1_0; @(negedge timedClock) xpect(1'b1, 1'b1, 1'b1, 1'b0);
 		
 		{rst, b1, b2, b3, b4} = 5'b0_0_0_1_0; @(negedge timedClock) xpect(1'b1, 1'b1, 1'b1, 1'b0);
