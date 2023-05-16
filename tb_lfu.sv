@@ -57,7 +57,7 @@ module tb_lfu;
 		{rst, b1, b2, b3, b4} = 5'b0_0_0_0_1; @(negedge timedClock) xpect(1'b1, 1'b1, 1'b1, 1'b0);
 		{rst, b1, b2, b3, b4} = 5'b0_0_0_0_1; @(negedge timedClock) xpect(1'b1, 1'b1, 1'b0, 1'b1);
 
-		$display("MRU TEST PASSED");
+		$display("LFU TEST PASSED");
 		$finish;
 	end
 endmodule

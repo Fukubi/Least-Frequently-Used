@@ -6,6 +6,7 @@ module lfu(clk, rst, b1, b2, b3, b4, l1, l2, l3, l4);
 
   reg timedClock;
   reg [3:0][7:0] used_counter = 32'd0;
+  reg [3:0][7:0] used_counter_ff;
   reg [7:0] lowestValue = 8'd255;
   reg [4:0] addedIndex;
 
@@ -22,7 +23,7 @@ module lfu(clk, rst, b1, b2, b3, b4, l1, l2, l3, l4);
   end
 
   always_comb begin
-    //used_counter = 32'd0;
+    used_counter = used_counter_ff;
 
     lowestValue = used_counter[0];
 
@@ -85,6 +86,7 @@ module lfu(clk, rst, b1, b2, b3, b4, l1, l2, l3, l4);
 
   always_ff @(posedge timedClock) begin
     NextState <= CurrentState;
+	 used_counter_ff <= used_counter;
 
     case (NextState)
       BEGIN: NextState <= INITIAL;
