@@ -15,14 +15,6 @@ module lfu(clk, rst, b1, b2, b3, b4, l1, l2, l3, l4);
   timer t(.clock(clk), .timedClock(timedClock), .rst(rst));
 
   always_comb begin
-    if (rst) begin
-      CurrentState = BEGIN;
-    end else begin 
-      CurrentState = NextState;
-    end
-  end
-
-  always_comb begin
     used_counter = used_counter_ff;
 
     lowestValue = used_counter[0];
@@ -83,15 +75,24 @@ module lfu(clk, rst, b1, b2, b3, b4, l1, l2, l3, l4);
       end
     endcase
   end
-
-  always_ff @(posedge timedClock) begin
-    NextState <= CurrentState;
-	 used_counter_ff <= used_counter;
-
-    case (NextState)
-      BEGIN: NextState <= INITIAL;
-      INITIAL: if (b1 || b2 || b3 || b4) NextState <= ADD;
-      ADD: NextState <= INITIAL;
+  
+  always_comb begin
+	 NextState = CurrentState;
+  
+	 case (CurrentState)
+      BEGIN: NextState = INITIAL;
+      INITIAL: if (b1 || b2 || b3 || b4) NextState = ADD;
+      ADD: NextState = INITIAL;
     endcase
+  end
+
+  always_ff @(posedge timedClock, posedge rst) begin
+	 if (rst) begin
+      CurrentState <= BEGIN;
+		used_counter_ff <= 32'd0;
+    end else begin 
+      CurrentState <= NextState;
+		used_counter_ff <= used_counter;
+    end
   end
 endmodule

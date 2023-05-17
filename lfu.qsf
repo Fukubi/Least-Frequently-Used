@@ -55,10 +55,10 @@ set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_global_assignment -name SYSTEMVERILOG_FILE tb_lfu.sv
 set_global_assignment -name SYSTEMVERILOG_FILE timer.sv
 set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "3.3-V LVTTL"
-set_location_assignment PIN_G26 -to b1
-set_location_assignment PIN_N23 -to b2
-set_location_assignment PIN_P23 -to b3
-set_location_assignment PIN_W26 -to b4
+set_location_assignment PIN_N26 -to b1
+set_location_assignment PIN_P25 -to b2
+set_location_assignment PIN_AE14 -to b3
+set_location_assignment PIN_AF14 -to b4
 set_location_assignment PIN_N25 -to rst
 set_location_assignment PIN_V2 -to b5
 set_location_assignment PIN_N2 -to clk

@@ -12,7 +12,7 @@ module timer(clock, timedClock, rst);
 	  end else begin
 	    counter = counter + 1'd1;
 	    
-	    if (counter == `TIME_SIM) begin
+	    if (counter == `TIME_50MHz) begin
    			  counter <= 32'd0;
    			  timedClock <= 1'd1;
     		end else begin
